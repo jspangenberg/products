@@ -15,4 +15,8 @@ object Product {
 
   def findByEan(ean: Long) = products.find(_.ean == ean)
 
+  def add(product: Product): Unit = {
+    products = products + product;
+  }
+
 }
