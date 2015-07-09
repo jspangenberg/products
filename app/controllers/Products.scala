@@ -20,4 +20,5 @@ class Products extends Controller {
       Ok(views.html.products.details(product))
     }.getOrElse(NotFound)
   }
+
 }
